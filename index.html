@@ -1,29 +1,186 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>우메보시 주먹밥 만화</title>
-	<style type="text/css">
-		img{display: block; width: 40%;  margin: 0 auto 20px; outline: 2px solid black;}
-		h2{text-align: center; margin-bottom: 20px}
+  <meta charset="utf-8">
+  <title>신풍경 week2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+  <style type="text/css">
+.category-container {
+  float: left;
+  width: 15%;
+  height: 100%; text-align: right; position: fixed;
+}
 
-	</style>
+
+.category-container ul {
+      list-style-type: none; 
+    }
+
+ li:hover {
+  text-decoration: underline;cursor: pointer; color: blue;
+}   
+
+#main-container2, #main-container3, #main-container4 {
+  display: none;
+  margin-left: 20%;
+  height: 100%;
+}
+
+#main-container {
+  display: block;
+  margin-left: 20%;
+  height: 100%;}
+
+h1{margin-top: -11%; margin-bottom: -5%;font-family: 'Noto Serif', serif; font-weight: 900;}
+h2{font-family: 'Noto Serif', serif; margin-bottom: 12px}
+p{width: 700px; line-height: 1.8; margin: 0}
+img{display: block; width: 30%; margin-bottom: 20px}
+.popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff536;
+      padding: 20px;
+      border: 1px solid #000000;
+      box-shadow: 5px 5px 5px #888888;
+      width: 400px;
+      height: 300px;
+      z-index: 9999;
+    }
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;}
+.popup-thing{text-align: center; padding-top: 50px}
+.popup-thing2{margin: 0; width: 100%;text-align: center; }
+.bu{background-color: red; display: inline-block; color: white; margin: 0; margin-bottom: 10px; margin-top: 10px;}
+.one-two{margin-top: 200px; text-align: left;}
+h5{margin: 0; margin-top: 10px;}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0; 
+  color: lightgray; position: relative; z-index: 1; margin: 0;
+}
+.X{height: 120%; width: 1450px; margin-top: 200px; left: 0; bottom: 0; position: relative;
+  z-index: 0; }
+
+</style>
 </head>
 <body>
-	<h2>우메보시 주먹밥 이야기</h2>
-	  <img src="img01.jpg">
-	  <img src="img02.jpg">
-	  <img src="img03.jpg">
-	  <img src="img04.jpg">
-	  <img src="img05.jpg">
-	  <img src="img06.jpg">
-	  <img src="img07.jpg">
-	  <img src="img08.jpg">
-	  <img src="img09.jpg">
-	  <img src="img10.jpg">
- 	  <img src="img11.jpg">
-	  <img src="img12.jpg">
-	  <img src="img13.jpg">
-	  <img src="img14.jpg">
-	  <img src="img15.jpg">
+  <div class="popup">
+    <h2 class="popup-thing">안녕하세요.</h2>
+    <p class="popup-thing2">이 웹페이지는 제가 2022년 11월 24일부터 12월 4일까지<br>일본 오시아게에 머물며 떠올린 짧은 생각을 모아놓은 곳입니다.<br>아주아주 사소하고 하찮은 제 의식의 흐름을 즐겨주세요.</p>
+    <button id="close-btn">그러도록 하마.</button>
+  </div>
+<div class="category-container">
+  <ul>
+    <h1>오시아게<br>단상</h1>
+    <h6>2022/11/24~2022/12/04</h6>
+    <li class="A">1.</li>
+    <li class="B">2.</li>
+    <li class="C">3.</li>
+    <li class="D">4.</li>
+    <li class="E" style="color: lightblue"><a href="file:///Users/sinpung-gyeong/Desktop/%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%8E%E1%85%A6%E1%84%87%E1%85%AE%E1%86%AF%E1%84%86%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%B4%E1%84%91%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%AF/3%E1%84%92%E1%85%A1%E1%86%A8%E1%84%82%E1%85%A7%E1%86%AB%201%E1%84%92%E1%85%A1%E1%86%A8%E1%84%80%E1%85%B5/%E1%84%8B%E1%85%B0%E1%86%B8%E1%84%91%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF/2%E1%84%8C%E1%85%AE%E1%84%8E%E1%85%A1/%E1%84%86%E1%85%A1%E1%86%AB%E1%84%92%E1%85%AA%20%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5/index.html" target="_blank"><h5>보너스</h5></a></li>
+    
+  </ul>
+</div>
+<div>
+  <div id="main-container">
+  <img src="./img01.jpg">
+  <h2>상호신뢰의 상징은 널린 빨랫감</h2>
+  <p>일본은 참 스스럼없이 빨래를 집 밖에 널어두는 것 같습니다.
+
+미세먼지가 없어서 더 그런걸 수도 있지만<br>기본적으로 이웃에게 자신과 자신의 일부(빨래)를 내보이는 것을 거북하다고 생각하지 않는 것 같습니다.<br>
+
+발가락양말도 막 널어놓고 그러더라고요. 그래서 제가 대신 🐢해졌습니다.​</p>
+    <div class="one-two" style="margin-left: 40%">
+      <img src="img05.jpg" style="width: 90%">
+      <h2>쿡 찌르기</h2>
+      <p>일찍 학교에 가서 과제하기로 한 날이었습니다. 등굣길이 너무 어두우면<br>  곤란하니까 조도를 체크하려고 창밖을 봤는데 하늘이 소름돋게 예쁘더라구요.<br> 깜짝놀라서 바로 카메라 키고 사진 찍었습니다. 종종 이렇게 단조롭고 뻔하지만<br> 사람을 쿡 찌르는 광경이 있습니다.. 
+      특히 일본의 골목길을 걷다보면 <br>그런 풍경을 마주하게 되는 순간이 많아서 좋았습니다. </p>
+    </div>
+</div>
+<div>
+  <div id="main-container2">
+  <img src="img02.jpg">
+  <h2>성의가 없다</h2>
+    <p>신사에서 5000원 주고 산 토용안에 부적같아 보이는게 들어있었습니다.<br>
+     무슨 뜻일까. 액막이? 행운? 재물? 합격?<br>
+    궁금해져서 번역기를 돌렸습니다.<br>
+    정말로 정직하게 <br> <div class="bu">부<br>적</div><br> 이라고 써있었습니다.. 우우 너무 싱겁다.
+    </p>
+    <div class="one-two" style="margin-left: 40%">
+      <img src="gif01.gif">
+      <h2>핑퐁핑퐁핑</h2>
+      <p>일본에서 가장 많이 한 일은 바로 '탁구'였습니다..(네 저도 어이가 없습니다.) <br>'전설의 랠리'를 완성하기 위해서 거의 매일 친 것 같습니다.  <br>전설의 랠리는 말 그대로 Legend of Rally입니다. <p style="font-weight: bold; margin: 0">전설의 랠리가 되는 기준 : 약 20회 이상 빠른 속도로 멋지게 쳐야함</p><br>성공했냐고요? 아니요..<br><br><br>  </p>
+    </div>
+</div> 
+<div>
+  <div id="main-container3">
+  <img src="img03.jpg">
+  <h2>하라주쿠스피릿</h2>
+    <p>하라주쿠에서 발견한 귀여운 그래피티입니다. 저 앞에서 사진찍을걸.. <br> 거리에 그림을 그리는 사람들은 참 멋진 것 같습니다. <br><p style="font-style: italic;">세상이 나의 캔버스야으아</p> << 라는 스피릿이 느껴지죠?</br>
+​    </p> 
+  </div>
+ <div id="main-container4">
+  <img src="img04.jpg" style="display: inline-block; margin: 0; margin-bottom: -28px">
+  <h6 style="display: inline-block; margin-left: 10px; width: 30%; ">
+  내부 사진을 못찍어서 아쉬운대로 제 귀여운 사무라이 양말을 보여드리겠습니다.</h6>
+  <h2>온천의 나라</h2>
+  <p style="width: 800px">온천에 다녀왔습니다.<br>거창한 곳은 아니었고 그냥 동네 목욕탕 정도의 규모였는데 상상이상으로 좋았습니다.<br>
+  입구를 지나 들어가면 크기 크지만 왠지 소박한 느낌이 드는 식당이 있었고(음식의 맛도 소박) <br>탈의실을 거쳐 들어간 목욕탕 안에는 샤워공간과 사우나, 소금탕이 있었습니다.<br>얇은 문 한겹을 더 지나면 노천탕이 가득한 공간이 펼쳐졌는데 처음엔 무슨 무릉도원인줄 알았습니다. <br>
+  막 과일나무 심겨져있고.. 조금 감격했습니다. 성질이 급해서 30분 못채우고 나올것 같다고 돈아깝다고 <br>가는길에 그랬는데 웬걸 두 시간 있었습니다.
+  왜 목욕 중 음주는 몸에 안좋은걸까요<br>몸 담그고 생맥 부시고 싶엇다데스.. 
+  </p> 
+ </div>
+ <div> <!--바닥에 깔리는 사진들-->
+    <img src="topimg01.png" class="X">
+ </div>
+<script>
+const mainContainer = document.querySelector('#main-container');
+const mainContainer2 = document.querySelector('#main-container2');
+const mainContainer3 = document.querySelector('#main-container3');
+const mainContainer4 = document.querySelector('#main-container4');
+
+document.querySelector('.A').addEventListener('click', function() {
+  mainContainer.style.display = 'block';
+  mainContainer2.style.display = 'none';
+  mainContainer3.style.display = 'none';
+  mainContainer4.style.display = 'none';
+});
+
+document.querySelector('.B').addEventListener('click', function() {
+  mainContainer.style.display = 'none';
+  mainContainer2.style.display = 'block';
+  mainContainer3.style.display = 'none';
+  mainContainer4.style.display = 'none';
+});
+
+document.querySelector('.C').addEventListener('click', function() {
+  mainContainer.style.display = 'none';
+  mainContainer2.style.display = 'none';
+  mainContainer3.style.display = 'block';
+  mainContainer4.style.display = 'none';
+});
+
+document.querySelector('.D').addEventListener('click', function() {
+  mainContainer.style.display = 'none';
+  mainContainer2.style.display = 'none';
+  mainContainer3.style.display = 'none';
+  mainContainer4.style.display = 'block';
+});
+
+const popup = document.querySelector('.popup');
+const closeBtn = document.querySelector('#close-btn');
+
+closeBtn.addEventListener('click', function() {
+  popup.style.display = 'none';
+});
+</script>
 </body>
+<footer><h5>© 2023 03 04. 신풍경 All rights reserved.</h5></footer>
 </html>
